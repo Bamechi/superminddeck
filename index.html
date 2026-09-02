@@ -676,9 +676,16 @@ ul.clean li b{color:var(--cream);font-weight:600}
 <!-- ============ PORTAL 9: THE MONEY PLAN ============ -->
 <section class="portal" id="p-money">
  <div class="backbar"><button class="backbtn" onclick="goHub()">&#8592; Portals</button><span class="crumb">09 &middot; THE MONEY PLAN</span></div>
- <div class="kicker">Resources, budget tiers, equity, and the north star</div>
+ <div class="kicker">Resources, budget tiers, equity, vendor proposals and the north star</div>
  <h2>How all of this gets paid for.</h2>
  <div class="rule"></div>
+
+ <div class="tabs" data-tabs="money">
+   <button class="tab on" data-t="mp-plan">The Money Plan</button>
+   <button class="tab" data-t="mp-media">Media Proposals</button>
+ </div>
+
+ <div class="panel on" id="mp-plan">
  <div class="two">
   <div>
    <h4>What we already have — the resource map</h4>
@@ -710,7 +717,7 @@ ul.clean li b{color:var(--cream);font-weight:600}
    <div class="card" style="border-color:rgba(201,162,39,.5)">
     <p>Cash is short and talent is the constraint. The proposal on the table: <b style="color:var(--cream)">equity instead of full rates</b> for the media team where the professionals are high-level enough to bet on the outcome.</p>
     <ul class="clean" style="margin-top:10px">
-      <li><b>Amechi:</b> significant equity in the IP produced (the shows and programming as assets), and a path to <b>7.5% company equity</b> as the ultimate goal — in exchange for producing, leading the creator machine and affiliate program, and managing the social team at below-market cash.</li>
+      <li><b>Amechi:</b> significant equity in the IP produced &mdash; the shows and programming as assets &mdash; in exchange for producing, leading the creator machine and affiliate program, and managing the social team at below-market cash.</li>
       <li><b>Media team:</b> equity-plus offers where we can attract high-level professionals; where we cannot, the protected cash budget above so the media never goes dark.</li>
       <li><b>Why the board should want this:</b> equity holders do not quit in month two, and the fear of wasted work disappears when the people making the work own its upside.</li>
     </ul>
@@ -724,6 +731,227 @@ ul.clean li b{color:var(--cream);font-weight:600}
     <p>The tiers are self-funding by design: hitting the $15k revenue month (the board's own target) covers the Ideal tier from margin. The 3-month interval is the test — the media line is not a cost to defend forever, it is a machine being proven against a number.</p>
    </div>
   </div>
+ </div>
+ </div>
+
+ <!-- ============ MEDIA PROPOSALS ============ -->
+ <div class="panel" id="mp-media">
+  <p class="lede">Seven production vendors across Los Angeles and Atlanta, normalized to the same cost basis. Every rate converted to a fully-loaded cost per shoot day so the comparison is real. Event and mastermind pricing is broken out separately, with the attendee-package resale math that turns event coverage from a cost line into a profit line.</p>
+
+  <div class="card" style="margin-top:16px;border-color:rgba(201,162,39,.5)">
+   <h4>Bottom line — the most expensive vendor is the cheapest per finished shoot day</h4>
+   <p>High Arc reads as the premium option because its à-la-carte sheet is long. At retainer it inverts. <b style="color:var(--cream)">$12,000/month with the barter buys eight shoot days with three-person crews, all gear and all editing — $1,500 per fully-loaded day.</b> K-Star's retainer is $7,000 for four days: $1,750 per day, two people, and it carries no volume discount over their day rate. On a per-crew-member, per-finished-asset basis, the expensive vendor wins.</p>
+   <p style="margin-top:10px">The constraint is not value. It is cash. $12,000–13,500/month cannot be signed against current revenue. The move is to buy High Arc in blocks where deliverable density justifies the rate, run volume through cheaper crews, and use the attendee-package funnel to fund the retainer inside two quarters.</p>
+  </div>
+
+  <div class="grid g3" style="margin-top:16px">
+   <div class="card"><h3 style="color:var(--red)">$1,500</h3><p>High Arc loaded cost per shoot day at barter retainer — 3 crew, gear + editing included</p></div>
+   <div class="card"><h3 style="color:var(--cream)">$1,750</h3><p>K-Star loaded cost per shoot day — 2 crew, editing included, no retainer discount</p></div>
+   <div class="card"><h3 style="color:var(--cream)">3.3&times;</h3><p>Spread between High Arc and K-Star on a 2-day mastermind, before adjusting for asset count</p></div>
+  </div>
+
+  <h3 style="margin-top:26px">Master comparison</h3>
+  <p style="margin-top:6px">Tier encodes crew self-sufficiency, not quality. <b>Tier I</b> brings its own producer, crew, gear and post — you brief it and it ships. <b>Tier II</b> brings an operator plus partial team and needs direction. <b>Tier III</b> is a solo shooter running on your gear, your direction and, in most cases, your editing.</p>
+  <table>
+   <tr><th>Vendor</th><th>Market</th><th>Tier</th><th>Day rate</th><th>Retainer</th><th>Crew</th></tr>
+   <tr><td><strong>High Arc Media</strong><br><span class="mono" style="font-size:10px;opacity:.6">DERICK POPE</span></td><td>ATL + LA team</td><td class="mono">TIER I</td><td class="mono">$500–1,250<br><span style="opacity:.6">by format, gear extra</span></td><td class="mono">$13,500<br><span style="opacity:.6">$12,000 w/ barter</span></td><td>2–6 typ.<br><span style="opacity:.6">scaled to 60</span></td></tr>
+   <tr><td><strong>Thadieus</strong><br><span class="mono" style="font-size:10px;opacity:.6">ATLANTA · QUOTE PENDING</span></td><td>ATL</td><td class="mono">TIER I</td><td class="mono">Not yet quoted<br><span style="opacity:.6">expected below High Arc</span></td><td class="mono">Not yet quoted</td><td>Full team</td></tr>
+   <tr><td><strong>K-Star Productions</strong><br><span class="mono" style="font-size:10px;opacity:.6">KADEN LYMON</span></td><td>ATL</td><td class="mono">TIER II</td><td class="mono">$1,750<br><span style="opacity:.6">2 people, all-in</span></td><td class="mono">$7,000<br><span style="opacity:.6">1 day/week</span></td><td>2 + 1 asst</td></tr>
+   <tr><td><strong>Q</strong></td><td>LA</td><td class="mono">TIER II</td><td class="mono">$1,250+<br><span style="opacity:.6">rises with crew</span></td><td class="mono">~$6,000<br><span style="opacity:.6">proposed, unscoped</span></td><td>Editors + crew on call</td></tr>
+   <tr><td><strong>Solomon</strong><br><span class="mono" style="font-size:10px;opacity:.6">FACTORY 24-7 STAFF</span></td><td>LA</td><td class="mono">TIER III</td><td class="mono">$800–1,200</td><td class="mono">—</td><td>1</td></tr>
+   <tr><td><strong>Aaron Spells</strong></td><td>ATL</td><td class="mono">TIER III</td><td class="mono">$800–1,200<br><span style="opacity:.6">assumed parity</span></td><td class="mono">—</td><td>1</td></tr>
+   <tr><td><strong>Al</strong></td><td>LA</td><td class="mono">TIER III</td><td class="mono">$750–1,200<br><span style="opacity:.6">by task</span></td><td class="mono">—</td><td>1</td></tr>
+  </table>
+  <div class="card" style="margin-top:12px;border-color:rgba(164,0,1,.5)">
+   <h4>Read the day rates carefully — they are not the same unit</h4>
+   <p>High Arc's day rate is crew only and caps at four hours, with cameras, lights and audio billed on top and editing excluded. K-Star's $1,750 includes two operators, their own gear and full post. Comparing $1,250 to $1,750 without that adjustment is the single easiest way to buy the wrong vendor.</p>
+  </div>
+
+  <h3 style="margin-top:26px">Cost normalization <span class="mono" style="font-size:11px;opacity:.6;letter-spacing:.14em">— BASIS: 8 SHOOT DAYS / MONTH</span></h3>
+  <p style="margin-top:6px">Eight shoot days a month is the standing LA plan: two days a week, one long-form episode plus six vertical clips plus thirty-plus stills per day. Every option below is priced to deliver that same month so the numbers are comparable.</p>
+  <table>
+   <tr><th>Option</th><th>Monthly</th><th>Loaded $/day</th><th>Crew/day</th><th>$ per crew-day</th><th>Gear</th><th>Editing</th></tr>
+   <tr><td><strong>High Arc — barter retainer</strong><br><span style="opacity:.6;font-size:11px">Keys films one testimonial for partnership ads</span></td><td class="mono">$12,000</td><td class="mono">$1,500</td><td class="mono">3</td><td class="mono">$500</td><td class="mono" style="color:#7bbf7b">INCL</td><td class="mono" style="color:#7bbf7b">INCL</td></tr>
+   <tr><td><strong>High Arc — standard retainer</strong></td><td class="mono">$13,500</td><td class="mono">$1,688</td><td class="mono">3</td><td class="mono">$563</td><td class="mono" style="color:#7bbf7b">INCL</td><td class="mono" style="color:#7bbf7b">INCL</td></tr>
+   <tr><td><strong>High Arc — à la carte</strong><br><span style="opacity:.6;font-size:11px">vendor's own estimate at day rates</span></td><td class="mono">$20,000–30,000</td><td class="mono">$2,500–3,750</td><td class="mono">3</td><td class="mono">$833–1,250</td><td class="mono" style="color:var(--gold)">BILLED</td><td class="mono" style="color:var(--gold)">BILLED</td></tr>
+   <tr><td><strong>Thadieus — projected</strong><br><span style="opacity:.6;font-size:11px">working assumption at ~10–20% below High Arc pending his quote</span></td><td class="mono">$9,600–10,800</td><td class="mono">$1,200–1,350</td><td class="mono">3</td><td class="mono">$400–450</td><td class="mono" style="color:var(--gold)">TBC</td><td class="mono" style="color:var(--gold)">TBC</td></tr>
+   <tr><td><strong>K-Star — day rate or retainer</strong><br><span style="opacity:.6;font-size:11px">$7,000 covers 4 days; 8 needs two</span></td><td class="mono">$14,000</td><td class="mono">$1,750</td><td class="mono">2</td><td class="mono">$875</td><td class="mono" style="color:#7bbf7b">INCL</td><td class="mono" style="color:#7bbf7b">INCL</td></tr>
+   <tr><td><strong>Q — day rate</strong><br><span style="opacity:.6;font-size:11px">editing scope unconfirmed</span></td><td class="mono">$10,000</td><td class="mono">$1,250</td><td class="mono">1–2</td><td class="mono">$625–1,250</td><td class="mono" style="opacity:.6">UNCLEAR</td><td class="mono" style="opacity:.6">UNCLEAR</td></tr>
+   <tr><td><strong>Q — proposed retainer</strong><br><span style="opacity:.6;font-size:11px">no days, crew or deliverables defined</span></td><td class="mono">$6,000</td><td class="mono">$750</td><td class="mono">?</td><td class="mono">?</td><td class="mono" style="opacity:.6">UNCLEAR</td><td class="mono" style="opacity:.6">UNCLEAR</td></tr>
+   <tr><td><strong>Aaron Spells</strong><br><span style="opacity:.6;font-size:11px">editing not costed</span></td><td class="mono">~$8,000</td><td class="mono">~$1,000</td><td class="mono">1</td><td class="mono">~$1,000</td><td class="mono" style="opacity:.6">UNCLEAR</td><td class="mono" style="color:#c96">EXCL</td></tr>
+   <tr><td><strong>Solomon</strong><br><span style="opacity:.6;font-size:11px">would need every weekend of the month</span></td><td class="mono">~$8,000</td><td class="mono">~$1,000</td><td class="mono">1</td><td class="mono">~$1,000</td><td class="mono" style="opacity:.6">UNCLEAR</td><td class="mono" style="color:#c96">EXCL</td></tr>
+   <tr><td><strong>Al</strong><br><span style="opacity:.6;font-size:11px">plus B's gear and B's edit time</span></td><td class="mono">~$7,800</td><td class="mono">~$975</td><td class="mono">1</td><td class="mono">~$975</td><td class="mono" style="color:var(--gold)">B'S KIT</td><td class="mono" style="color:var(--gold)">B EDITS</td></tr>
+  </table>
+  <div class="card" style="margin-top:12px;border-color:rgba(164,0,1,.5)">
+   <h4>The cheapest line item is not the cheapest solution</h4>
+   <p>Al at $975/day is the lowest number on this sheet. It also consumes B's camera package, B's direction on set and B's edit bay after. Price the producer's time at anything above $60/hour and Al lands north of every option on this page. The rate is only honest for days where B is already on set and the deliverable is B-roll or stills.</p>
+  </div>
+
+  <h3 style="margin-top:26px">Vendor files <span class="mono" style="font-size:11px;opacity:.6;letter-spacing:.14em">— RATINGS 1–5, HIGHER IS BETTER</span></h3>
+  <p style="margin-top:6px">Craft ceiling is the best work the vendor can produce, not their average. Team depth is how many roles they can fill without B sourcing. Independence is the inverse of management burden — a 5 means brief and walk away; a 1 means B runs the day. Culture fit reflects proven working relationship and alignment with where the brand is going.</p>
+
+  <h4 style="margin-top:18px">Atlanta</h4>
+  <div class="grid g2">
+   <div class="card" style="border-color:rgba(164,0,1,.5)">
+    <h3>High Arc Media <span class="pill">TIER I</span></h3>
+    <p style="opacity:.7">Derick Pope · Atlanta GA, LA team on call</p>
+    <table style="margin-top:10px">
+     <tr><td><strong>Day rates</strong></td><td>Coffee-shop show, 3 crew <b class="mono">$1,250</b> · white cyc 1 person <b class="mono">$500</b> / 2 people <b class="mono">$750</b> · docu-style <b class="mono">$500</b> per cam-op. Up to 4 hrs.</td></tr>
+     <tr><td><strong>Gear</strong></td><td>2× Sony FX3 $400 · 1× $200 · 2× BMD Micro Studio $75 · 3-light setup $150 · 4 mics $150 / 2 mics $75, per day</td></tr>
+     <tr><td><strong>Retainer</strong></td><td><b class="mono">$13,500</b>/mo or <b class="mono">$6,750</b> bi-weekly — 2 shoot days/week, 3-person crews, gear, all editing. <b class="mono">$12,000</b> with the barter.</td></tr>
+     <tr><td><strong>Editing</strong></td><td>Included at retainer. Two revision rounds inside scope.</td></tr>
+     <tr><td><strong>Capacity</strong></td><td>As many days as needed. 1–2 weeks scheduling notice, 48–72 hr reschedule. Free reschedule at 48 hrs; inside 48 hrs the day is burned.</td></tr>
+     <tr><td><strong>Continuity</strong></td><td>Trains three people per role so the system survives turnover. Derick on set the first weeks, then hands off.</td></tr>
+     <tr><td><strong>Trade ask</strong></td><td>Keys films one phone testimonial on set. High Arc runs partnership ads with it — never to Keys' followers, no further work.</td></tr>
+    </table>
+    <p style="margin-top:10px" class="mono" style="font-size:11px">CRAFT 5 · DEPTH 5 · INDEPENDENCE 5 · CAPACITY 5 · CULTURE 4 · CASH EFFICIENCY 2</p>
+    <p style="margin-top:8px"><b>The read:</b> highest quality, deepest bench, has produced shows of exactly this shape before, and the only vendor who can crew a mastermind and an LA week in the same month. Also the only one whose contract is written by someone who has been burned before — which cuts both ways.</p>
+   </div>
+   <div class="card" style="border-color:rgba(201,162,39,.5)">
+    <h3>Thadieus <span class="pill">TIER I</span> <span class="pill" style="border-color:var(--gold);color:var(--gold)">QUOTE PENDING</span></h3>
+    <p style="opacity:.7">Atlanta · full team</p>
+    <table style="margin-top:10px">
+     <tr><td><strong>Structure</strong></td><td>Runs a full team in Atlanta. Capability set understood to match High Arc's — crew, gear, multi-cam, editing.</td></tr>
+     <tr><td><strong>Expected position</strong></td><td>Likely modestly below High Arc on rate for comparable scope. <b style="color:var(--cream)">Not yet quoted.</b></td></tr>
+     <tr><td><strong>Why he matters</strong></td><td>The only credible second Tier I in Atlanta. Without a second quote, High Arc's retainer is a price with no comparison behind it — which is the weakest position to negotiate from.</td></tr>
+     <tr><td><strong>What to request</strong></td><td>Same template as the others: monthly retainer for 8 shoot days, 3-person crews, gear and editing included; event and mastermind card; attendee package pricing; reschedule terms; revision rounds.</td></tr>
+     <tr><td><strong>Status</strong></td><td>Proposal not yet requested. This is the single cheapest action on this page.</td></tr>
+    </table>
+    <p style="margin-top:10px"><b>The read:</b> a full-team Atlanta vendor at plausibly lower cost changes the negotiation on every other line here. Ratings withheld until the proposal lands — everything above is a working assumption, not a quote.</p>
+   </div>
+   <div class="card">
+    <h3>K-Star Productions <span class="pill">TIER II</span></h3>
+    <p style="opacity:.7">Kaden Lymon, set lead · Sean Bagley · Juston White, asst</p>
+    <table style="margin-top:10px">
+     <tr><td><strong>Day rate</strong></td><td><b class="mono">$1,750</b> — two people, editing included, own gear</td></tr>
+     <tr><td><strong>Retainer</strong></td><td><b class="mono">$7,000</b>/mo at one shoot day per week, editing included</td></tr>
+     <tr><td><strong>Gear</strong></td><td>Sony A7III + A7IV · DJI Mic Mini wireless kits · Vidpro XM-55 and shotgun mics · Neewer Q300 and 7002 lighting · strobes</td></tr>
+     <tr><td><strong>Editing</strong></td><td>Full post included, 3–5 day lead time</td></tr>
+     <tr><td><strong>Capacity</strong></td><td>1–2 days per week, firm</td></tr>
+     <tr><td><strong>Trade ask</strong></td><td>Event access, on-screen credits, real creative direction</td></tr>
+     <tr><td><strong>Contact</strong></td><td class="mono" style="opacity:.6">HELD OFF THE PUBLIC DECK</td></tr>
+    </table>
+    <p style="margin-top:10px" class="mono" style="font-size:11px">CRAFT 3 · DEPTH 3 · INDEPENDENCE 3 · CAPACITY 2 · CULTURE 4 · CASH EFFICIENCY 4</p>
+    <p style="margin-top:8px"><b>The read:</b> hungry, creative, wants the credit and the room more than the cheque — which means the quoted numbers are almost certainly negotiable. Unproven at flagship quality. The A7III/A7IV and LED-panel package is prosumer against High Arc's FX3 kit, and that gap shows most on the coffee-shop show format. Their event pricing, not their day rate, is where they win.</p>
+   </div>
+   <div class="card">
+    <h3>Aaron Spells <span class="pill">TIER III</span> <span class="pill" style="border-color:var(--gold);color:var(--gold)">PROPOSAL OPEN</span></h3>
+    <p style="opacity:.7">Atlanta · prior Supermind and 19Keys work</p>
+    <table style="margin-top:10px">
+     <tr><td><strong>Day rate</strong></td><td>Not yet quoted. Working assumption <b class="mono">$800–1,200</b> at Solomon parity.</td></tr>
+     <tr><td><strong>Structure</strong></td><td>One-person operation. Can source crew, but sourcing raises the number.</td></tr>
+     <tr><td><strong>Editing</strong></td><td>Not confirmed</td></tr>
+    </table>
+    <p style="margin-top:10px" class="mono" style="font-size:11px">CRAFT 4 · DEPTH 1 · INDEPENDENCE 3 · CAPACITY 3 · CULTURE 4 · CASH EFFICIENCY 4</p>
+    <p style="margin-top:8px"><b>The read:</b> Solomon's profile in Atlanta — knows the work, knows the people, executes solo. Best used as the plus-one who makes a High Arc or K-Star day bigger, or as the standing operator on low-complexity days. Cannot carry a mastermind alone.</p>
+   </div>
+  </div>
+
+  <h4 style="margin-top:22px">Los Angeles</h4>
+  <div class="grid g3">
+   <div class="card">
+    <h3>Q <span class="pill">TIER II</span></h3>
+    <p style="opacity:.7">Los Angeles · editors and crew on call</p>
+    <table style="margin-top:10px">
+     <tr><td><strong>Day rate</strong></td><td><b class="mono">$1,250</b> and up — rises as he pulls in more of his bench</td></tr>
+     <tr><td><strong>Retainer</strong></td><td>Floated <b class="mono">~$6,000</b>/mo but declined to start there. Wants to see real volume before committing.</td></tr>
+     <tr><td><strong>Team</strong></td><td>Access to editors and additional crew — the deepest bench of the LA options</td></tr>
+     <tr><td><strong>Editing</strong></td><td>Has editors. Quality strong. Scope and turnaround undefined.</td></tr>
+     <tr><td><strong>Status</strong></td><td>Verbal only — nothing in writing on the same template as the others</td></tr>
+    </table>
+    <p style="margin-top:10px" class="mono" style="font-size:11px">CRAFT 4 · DEPTH 4 · INDEPENDENCE 4 · CAPACITY 4 · CULTURE 3 · CASH EFFICIENCY 3</p>
+    <p style="margin-top:8px"><b>The read:</b> the only LA vendor who can run a shoot day without B carrying it. His caution about the retainer is a good sign — he is pricing honestly rather than locking in revenue he cannot service. His $6,000 floor is the cheapest crewed retainer on the sheet, but it is a number without a scope attached, so it cannot be compared to High Arc's $13,500 until the days, crew size and deliverable count are written down.</p>
+    <p style="margin-top:8px"><b>Action:</b> portfolio links and a scoped written quote required before the team can rate him against the Atlanta proposals.</p>
+   </div>
+   <div class="card">
+    <h3>Solomon <span class="pill">TIER III</span> <span class="pill" style="border-color:var(--red);color:var(--red)">CAPACITY-LOCKED</span></h3>
+    <p style="opacity:.7">Los Angeles · full-time at Factory 24-7</p>
+    <table style="margin-top:10px">
+     <tr><td><strong>Day rate</strong></td><td><b class="mono">$800–1,200</b></td></tr>
+     <tr><td><strong>Retainer</strong></td><td>None — cannot be offered while at Factory</td></tr>
+     <tr><td><strong>Availability</strong></td><td>Weekends only. Cannot be pulled off the Factory team. Real overwork risk if leaned on.</td></tr>
+     <tr><td><strong>Best use</strong></td><td>Plus-one on large shoot days where a second reliable operator changes what the day can produce</td></tr>
+    </table>
+    <p style="margin-top:10px" class="mono" style="font-size:11px">CRAFT 4 · DEPTH 1 · INDEPENDENCE 3 · CAPACITY 1 · CULTURE 5 · CASH EFFICIENCY 4</p>
+    <p style="margin-top:8px"><b>The read:</b> the best cultural fit of any name on this sheet and the one B most wants in the room. Also the one who structurally cannot be the answer. Book him on weekends, treat every day as a bonus, and build the standing plan around someone else.</p>
+   </div>
+   <div class="card">
+    <h3>Al <span class="pill">TIER III</span></h3>
+    <p style="opacity:.7">Los Angeles · existing relationship</p>
+    <table style="margin-top:10px">
+     <tr><td><strong>Day rate</strong></td><td><b class="mono">$750–1,200</b> depending on the task</td></tr>
+     <tr><td><strong>Covers</strong></td><td>Production, photography, videography — gets the shoot done</td></tr>
+     <tr><td><strong>Gear</strong></td><td>Runs on B's package in practice</td></tr>
+     <tr><td><strong>Editing</strong></td><td>Not a poor editor — the style does not fit what Supermind needs. B carries the bulk of post.</td></tr>
+     <tr><td><strong>Real cost</strong></td><td>Day rate + B's gear + B's direction on set + B's edit bay after</td></tr>
+    </table>
+    <p style="margin-top:10px" class="mono" style="font-size:11px">CRAFT 2 · DEPTH 1 · INDEPENDENCE 1 · CAPACITY 4 · CULTURE 3 · CASH EFFICIENCY 2</p>
+    <p style="margin-top:8px"><b>The read:</b> a known quantity and the cheapest invoice, but the wrong shape for the plan. The stated goal is three people on a shoot day producing four episode pieces at once. Al is one person who needs the producer beside him, which is the opposite of what a three-person day is for. Keep him for B-roll and stills days where B is already on set.</p>
+   </div>
+  </div>
+
+  <h3 style="margin-top:26px">Event and mastermind coverage <span class="mono" style="font-size:11px;opacity:.6;letter-spacing:.14em">— SEPARATE BUDGET LINE</span></h3>
+  <p style="margin-top:6px">A different business from the weekly show days, and it should be budgeted separately. Weekly production is overhead. Event coverage is inventory — it gets resold to the people standing in the room. Only High Arc quoted a full event card; K-Star's public list covers two of the four lines.</p>
+  <table>
+   <tr><th>Line item</th><th>High Arc — 2 day</th><th>High Arc — 3 day</th><th>K-Star</th></tr>
+   <tr><td><strong>Cameras</strong></td><td class="mono">$400 / weekend</td><td class="mono">$400 / weekend</td><td class="mono">Own gear, included</td></tr>
+   <tr><td><strong>Camera operators</strong></td><td class="mono">$1,000 / day × 2</td><td class="mono">$1,000 / day × 3</td><td class="mono">2+ shooters, included</td></tr>
+   <tr><td><strong>Recap film</strong></td><td class="mono">$1,000<br><span style="opacity:.6">2–3 min</span></td><td class="mono">$1,250<br><span style="opacity:.6">2–3 min</span></td><td class="mono">Included<br><span style="opacity:.6">up to 2:30</span></td></tr>
+   <tr><td><strong>Full podcast episode</strong></td><td class="mono">$400 ×1</td><td class="mono">$650 ×2</td><td class="mono">Interview corner</td></tr>
+   <tr><td><strong>Podcast clips</strong></td><td class="mono">$250<br><span style="opacity:.6">6 clips ≤60s</span></td><td class="mono">$500<br><span style="opacity:.6">12 clips ≤60s</span></td><td class="mono">Not quoted</td></tr>
+   <tr><td><strong>Full session recordings</strong></td><td class="mono">$450</td><td class="mono">$750</td><td class="mono">Not quoted</td></tr>
+   <tr><td><strong>Session clips</strong></td><td class="mono">$500<br><span style="opacity:.6">12 clips ≤60s</span></td><td class="mono">$750<br><span style="opacity:.6">20 clips ≤60s</span></td><td class="mono">B-roll repository</td></tr>
+   <tr><td><strong>Photography</strong></td><td class="mono">Included</td><td class="mono">Included</td><td class="mono">Not in this tier</td></tr>
+   <tr><td><strong>Mastermind total</strong></td><td class="mono"><strong>~$5,000</strong></td><td class="mono"><strong>~$7,300</strong></td><td class="mono"><strong>from $1,500</strong></td></tr>
+   <tr><td><strong>Distributable assets</strong></td><td class="mono">~20+</td><td class="mono">~36+</td><td class="mono">~3</td></tr>
+   <tr><td><strong>Effective cost per asset</strong></td><td class="mono"><strong>~$250</strong></td><td class="mono"><strong>~$203</strong></td><td class="mono"><strong>~$500</strong></td></tr>
+  </table>
+  <div class="card" style="margin-top:12px;border-color:rgba(164,0,1,.5)">
+   <h4>The 3.3× spread closes once you count deliverables</h4>
+   <p>K-Star's $1,500 buys a recap film, a set interview corner and raw B-roll — roughly three usable outputs. High Arc's $5,000 buys the recap plus six podcast clips, twelve session clips, full session recordings and photography, which is north of twenty distributable pieces. Per asset High Arc is the cheaper number. K-Star's flyer is priced for a single-deliverable event and has to be re-scoped against the same list before the two can be compared honestly.</p>
+  </div>
+
+  <h3 style="margin-top:26px">The attendee ladder <span class="mono" style="font-size:11px;opacity:.6;letter-spacing:.14em">— EVENT COVERAGE AS A PROFIT CENTRE</span></h3>
+  <p style="margin-top:6px">The attendee package is the only line on either proposal that can be resold at margin. Everything else is cost. Priced as a ladder rather than a single SKU, a mastermind stops consuming the media budget and starts funding it — and the top rung has the attendee paying Supermind to produce Supermind's own programming.</p>
+  <table>
+   <tr><th>Rung</th><th>What it is</th><th>Price</th><th>Cost</th></tr>
+   <tr><td class="mono"><strong>00</strong></td><td><strong>The recap film.</strong> Free. Every attendee appears in it, every attendee shares it. The lead magnet for the next mastermind, already paid for by the event budget.</td><td class="mono">$0</td><td class="mono">covered</td></tr>
+   <tr><td class="mono"><strong>01</strong></td><td><strong>Photo drop.</strong> 15 candid and posed stills, delivered inside 72 hours while the weekend is still live on their feed. The volume rung — expect roughly half the room.</td><td class="mono">$297</td><td class="mono">~$150</td></tr>
+   <tr><td class="mono"><strong>02</strong></td><td><strong>Attendee reel.</strong> 45-second reel cut to song, four speaking clips, full photo set. <b style="color:var(--cream)">Do not sell this rung at High Arc's $1,800 cost</b> — it only clears margin on K-Star's number.</td><td class="mono">$997</td><td class="mono">$950</td></tr>
+   <tr><td class="mono"><strong>03</strong></td><td><strong>Personal brand package.</strong> Dedicated operator for the weekend, 1:00–1:45 immersive recap, six vertical clips, 30 stills, one podcast-corner interview. <b style="color:var(--cream)">The core money rung.</b></td><td class="mono" style="color:var(--red)"><strong>$2,500</strong></td><td class="mono">$950–1,800</td></tr>
+   <tr><td class="mono"><strong>04</strong></td><td><strong>Docu profile.</strong> One attendee per event, filmed on location and released as a Supermind TV episode. The customer funds the network's programming and gets distribution in exchange.</td><td class="mono" style="color:var(--red)"><strong>$7,500</strong></td><td class="mono">~$2,200</td></tr>
+   <tr><td class="mono"><strong>05</strong></td><td><strong>Personal media retainer.</strong> The rung-04 graduate keeps the crew monthly. Supermind places the vendor and holds 20–30% as the network that made the introduction. Recurring, and it fills the crew's off-days.</td><td class="mono"><strong>$2,500/mo</strong></td><td class="mono">20–30% to Supermind</td></tr>
+  </table>
+  <div class="card" style="margin-top:12px;border-color:rgba(201,162,39,.5)">
+   <h4>~$14.9k projected net per mastermind</h4>
+   <p>Modeled on 25 attendees at the K-Star cost basis, once the ladder is sold at the modeled take rate. That single number is the argument for buying High Arc in event blocks rather than defending a monthly retainer against current revenue — the event pays for the crew, and the crew's off-days become the weekly show.</p>
+  </div>
+
+  <h3 style="margin-top:26px">The recommendation</h3>
+  <div class="grid g2">
+   <div>
+    <ul class="clean">
+     <li><b>1 · Request Thadieus' proposal this week.</b> Same template as the others. It is free, and without a second Atlanta Tier I, High Arc's retainer is a price with no comparison behind it.</li>
+     <li><b>2 · Do not sign a monthly retainer yet.</b> $12,000–13,500 cannot be signed against current revenue, and Q's $6,000 has no scope attached to compare.</li>
+     <li><b>3 · Buy High Arc in event blocks.</b> The 3-day mastermind card at ~$7,300 for 36+ assets is the best cost-per-asset on this page, and it is the block the attendee ladder resells against.</li>
+     <li><b>4 · Run weekly volume through cheaper crews.</b> Q in LA on scoped days, Solomon on weekends as a bonus, Aaron in Atlanta as the plus-one.</li>
+     <li><b>5 · Get Q's scope in writing.</b> Days, crew size, deliverable count, revision rounds, turnaround. Until then his number is not comparable to anything.</li>
+     <li><b>6 · Sell the ladder at the next mastermind.</b> One event at the modeled take rate funds a quarter of retainer.</li>
+    </ul>
+   </div>
+   <div>
+    <div class="card">
+     <h4>The trade to take</h4>
+     <p>High Arc's barter — one phone testimonial from Keys, used in High Arc's own partnership ads, never marketed to Keys' followers, no further obligation — takes $1,500/month off the retainer. That is <b style="color:var(--cream)">$18,000 a year for one piece of phone footage</b>. Confirm the usage terms in writing and take it.</p>
+    </div>
+    <div class="card" style="margin-top:14px">
+     <h4>What is still missing</h4>
+     <p>Thadieus: no proposal requested. Aaron Spells: committed to a proposal, not received. Q: verbal only, nothing on the shared template. <b>Three of seven vendors have not been priced on the same basis as the rest</b> — which means the comparison above is directionally right and not yet final.</p>
+    </div>
+   </div>
+  </div>
+
+  <div class="footnote" style="margin-top:18px">Normalized from six written and verbal proposals, August 2026. Contact details for individual vendors are held off this deck and kept in the producer's file. Property, retreat and third-party venue pricing sits outside this document.</div>
  </div>
 </section>
 
@@ -780,6 +1008,7 @@ ul.clean li b{color:var(--cream);font-weight:600}
    <a class="dlbtn ghost" href="SUPERMIND_World_Bible_V2.pdf" target="_blank" rel="noopener">Open in browser</a>
    <a class="dlbtn ghost" href="SUPERMIND_Wordmark_PNG_Pack.zip" download>&#8595;&nbsp; WORDMARK PNG PACK</a>
    <a class="dlbtn ghost" href="SUPERMIND_World_Bible_Edition_02.pdf" download>&#8595;&nbsp; KEYS' EDITION 02 &middot; 87 PAGES</a>
+   <a class="dlbtn ghost" href="https://super-marketingx-affiliate.vercel.app/" target="_blank" rel="noopener">&#8599;&nbsp; MARKETING &amp; AFFILIATE PLAN</a>
  </div>
 
  <div class="tabs" data-tabs="bible">
@@ -1364,6 +1593,10 @@ ul.clean li b{color:var(--cream);font-weight:600}
       <a class="dlbtn ghost" href="SUPERMIND_World_Bible_V2.pdf" target="_blank" rel="noopener">Open in browser</a>
       <a class="dlbtn ghost" href="SUPERMIND_Wordmark_PNG_Pack.zip" download>&#8595;&nbsp; WORDMARK PNG PACK &middot; 24 FILES</a>
     </div>
+    <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+      <a class="dlbtn ghost" href="https://super-marketingx-affiliate.vercel.app/" target="_blank" rel="noopener">&#8599;&nbsp; THE MARKETING &amp; AFFILIATE PLAN</a>
+    </div>
+    <div class="footnote" style="margin-top:8px">The marketing and affiliate plan is the companion document to Part VIII of the bible &mdash; the creator packages, the WHOP affiliate structure, the tiered payout ladder and the five-phase rollout. The bible governs how the work looks and sounds; that document governs how it gets distributed and paid for.</div>
     <div class="footnote" style="margin-top:10px">The PNG pack is built from the supplied master artwork at true resolution &mdash; 2041 &times; 153 px, aspect 13.34:1, stroke:cap 1:7. Four transparent RGBA colorways, five on-field plates with 1H clear space built in, eight web sizes, the compliant favicon set, the clear-space diagram, the master source files, and a README carrying the minimums and the twelve never-dos. <b>Internal concept, deck, web and digital use only</b> &mdash; no print, packaging, foil, engraving, embroidery, signage or fabrication until the founder-approved vector is stored. The raster holds at 300&nbsp;ppi to roughly 173&nbsp;mm wide; beyond that the work waits for the vector.</div>
     <table style="margin-top:18px">
       <tr><th>Part</th><th>What is in it</th></tr>
